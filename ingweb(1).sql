@@ -7,6 +7,7 @@
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
+SET FOREIGN_KEY_CHECKS = 0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -400,6 +401,7 @@ ALTER TABLE `promociones`
 --
 ALTER TABLE `ubicaciones`
   ADD CONSTRAINT `fk_ubicaciones_usuario` FOREIGN KEY (`ubi_emailUsuario`) REFERENCES `usuariosweb` (`userWEB_emailID`) ON DELETE CASCADE;
+  SET FOREIGN_KEY_CHECKS = 1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
