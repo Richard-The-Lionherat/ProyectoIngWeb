@@ -1,0 +1,12 @@
+# XAMPP
+/apache/
+/mysql/
+/php/
+
+# Archivos sensibles
+.env
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
